@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #fbfaf7;
+  --color-card: #ffffff;
+  --color-ink: #16181d;
+  --color-muted: #555b66;
+  --color-line: #e3e1da;
+  --color-accent: #1f3f9e;
+  --color-accent-soft: #e8edfb;
+  --color-btn: #1f3f9e;
+  --color-btn-hover: #183380;
+  --color-flag: #f2c14e;
+  --font-serif: "Times New Roman", Times, "Liberation Serif", serif;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-paper: #0f1115;
+    --color-card: #171a21;
+    --color-ink: #eceae4;
+    --color-muted: #a3a9b5;
+    --color-line: #2a2e38;
+    --color-accent: #9db2ff;
+    --color-accent-soft: #1e2748;
+    --color-btn: #3f5fd6;
+    --color-btn-hover: #5373e6;
+  }
+}
+
+@layer base {
+  :root {
+    color-scheme: light dark;
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 4.5rem;
+  }
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h5 {
+    font-family: var(--font-serif);
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+    text-wrap: balance;
+  }
+  p { text-wrap: pretty; }
+  code, pre, kbd {
+    font-family: var(--font-mono);
+    font-size: 13.5px;
+  }
+  a:focus-visible, button:focus-visible, iframe:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 3px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+}
+
+.ph {
+  background: var(--color-flag);
+  color: #16181d;
+  padding: 0.02em 0.3em;
+  border-radius: 3px;
+  font-style: normal;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
