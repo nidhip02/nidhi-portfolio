@@ -7,8 +7,8 @@ import { site } from "@/content/site";
 
 const items = [
   { label: "Skills", href: "/#skills" },
-  { label: "Experience", href: "/#experience" },
   { label: "Projects", href: "/#projects" },
+  { label: "Experience", href: "/#experience" },
   { label: "Education", href: "/#education" },
   { label: "Contact", href: "/#contact" },
 ];

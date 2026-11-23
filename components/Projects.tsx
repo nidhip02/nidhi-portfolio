@@ -9,7 +9,7 @@ export function Projects() {
     <Section
       id="projects"
       title="Projects"
-      intro="Research papers and personal projects. My iOS work at Hilti is described under Experience."
+      intro="AI and machine learning projects, including published research. My iOS work at Hilti is described under Experience."
     >
       <ul className="grid gap-6 md:grid-cols-2">
         {site.projects.map((p) => (
@@ -49,7 +49,7 @@ export function Projects() {
               ))}
               {p.repo === "private" ? (
                 <span className="inline-flex items-center gap-1.5 text-muted">
-                  <Lock size={15} aria-hidden /> Source code is private (employer work)
+                  <Lock size={15} aria-hidden /> Source code is private
                 </span>
               ) : (
                 <ExtLink href={p.repo} label="View on GitHub" placeholder="[Add GitHub repository link]" />

@@ -164,6 +164,50 @@ export const site = {
 
   projects: [
     {
+      title: "PCOS-AI: explainable risk screening with cited reports",
+      kind: "Cornell Tech team project, in progress",
+      summary:
+        "A tool that screens patients for PCOS risk from clinical, lab and ultrasound data, explains each prediction, and writes a short cited report using retrieval-augmented generation (RAG).",
+      role: "Built the RAG and reporting pipeline, the demo and the application interface.",
+      highlights: [
+        "Risk model: calibrated ExtraTrees with SMOTE and 5-fold stratified cross-validation. On the held-out test set it reached ROC-AUC 0.941, accuracy 0.899, recall 0.861 and Brier score 0.063 (541 patients, 432 train and 109 test).",
+        "Explains each prediction with SHAP.",
+        "Report generation: hybrid dense and sparse retrieval with Qwen2.5-3B, writing a short cited report. Retrieval scored Hit@3 1.0 and MRR 0.958 on 24 test queries over 34 passages.",
+        "Midpoint checkpoint presentation done. Final report and Gradio demo are still to come.",
+      ],
+      stack: ["Python", "scikit-learn", "SHAP", "RAG", "Qwen2.5-3B", "Hybrid retrieval", "Gradio"],
+      repo: "",
+    },
+    {
+      title: "Drive Gatekeeper: an MCP server that controls what Claude can read",
+      kind: "Solo project, working prototype",
+      summary:
+        "A personal Model Context Protocol (MCP) server that sits between Claude and Google Drive, so every file access is checked, approved by me and logged.",
+      role: "Designed and built all of it myself.",
+      highlights: [
+        "A blocklist of what Claude is not allowed to access.",
+        "An Allow or Deny prompt for every access, on an approvals page that only my own Mac can open.",
+        "Read-only Google Drive OAuth and a log of every request in JSONL.",
+        "Works end to end with my own Claude, running locally on my Mac.",
+      ],
+      stack: ["Node.js", "Model Context Protocol", "Google Drive API", "OAuth", "ngrok"],
+      repo: "private",
+    },
+    {
+      title: "PeerLens: citation checking for academic drafts",
+      kind: "Startup team project, in progress",
+      summary:
+        "Checks the citations and quotes in an academic draft against their sources, flags claims the source does not support, and deletes the draft within 24 hours.",
+      role: "Sole developer on a team of business and project management students.",
+      highlights: [
+        "Reads Word drafts and checks each citation and quote against its source, using Semantic Scholar and the Claude API.",
+        "Privacy by design: uploaded drafts are deleted within 24 hours.",
+        "Prototype in progress. No public link yet.",
+      ],
+      stack: ["Claude API", "PostgreSQL", "Semantic Scholar", "Word file parsing"],
+      repo: "",
+    },
+    {
       title: "Machine learning classifiers for malware detection",
       kind: "Research paper, first author",
       summary:
