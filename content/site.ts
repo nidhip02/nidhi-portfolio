@@ -29,7 +29,7 @@ export const site = {
   title: "Nidhi Patel | iOS and AI Engineer",
   description:
     "Nidhi Patel is an iOS engineer with strong product instincts, expanding into AI engineering and intelligent workflows. Cornell Tech MEng in Computer Science.",
-  headline: "iOS engineer with strong product instincts, expanding into AI engineering and intelligent workflows.",
+  headline: "Software engineer with strong product instincts, experience in mobile development, expanding into AI engineering and intelligent workflows.",
   intro:
     "I build and ship production iOS products. At Hilti I worked on CrewCenter, a construction workforce app with 100,000+ users. I am now studying Computer Science at Cornell Tech, focusing on AI agents and LLM-powered workflows.",
   now: [
