@@ -44,7 +44,7 @@ export function Hero() {
             <div className="grid grid-cols-[5.5rem_1fr] gap-3 py-2.5 md:grid-cols-[6.5rem_1fr] md:py-3">
               <dt className="text-muted">Résumé</dt>
               <dd>
-                <a href={links.resume} download className="inline-flex items-center gap-1.5 font-medium text-accent underline-offset-4 hover:underline">
+                <a href={links.resume} download="Nidhi_Patel_Resume.pdf" className="inline-flex items-center gap-1.5 font-medium text-accent underline-offset-4 hover:underline">
                   <FileText size={16} aria-hidden />
                   Download PDF
                 </a>
