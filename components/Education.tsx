@@ -9,7 +9,7 @@ export function Education() {
           <li key={e.school} className="grid gap-2 md:grid-cols-[13rem_1fr] md:gap-10">
             <p className="text-muted">{e.period}</p>
             <div>
-              <h3 className="text-[28px] font-semibold">{e.school}</h3>
+              <h3 className="text-[22px] font-semibold md:text-[28px]">{e.school}</h3>
               <p className="mt-1 font-medium">{e.degree}</p>
               {e.detail && <p className="mt-2 text-muted">{e.detail}</p>}
             </div>

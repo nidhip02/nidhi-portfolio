@@ -95,58 +95,27 @@ export const site = {
         "Contributed to an AI agent framework for leave requests, approvals and timesheets, and to payroll exports designed to unify data from three systems.",
         "Owned design, implementation and release of Construction Diary.",
       ],
-      work: [
-      {
-        title: "CrewCenter iOS",
-        kind: "Team product, my contributions",
-        summary: "Production iOS app for construction workforce management and time tracking.",
-        role: "Landing-page redesign, Extra Time feature work, GraphQL performance, testing.",
-        highlights: [
-          "GraphQL data fetching: about 15 s to 5 s using chunking and parallel requests.",
-          "Test coverage 68% to 76%. SonarQube issues 112 to 50.",
-          "Real-time work-time calculations for Extra Time / Overtime.",
-        ],
-        stack: ["Swift", "SwiftUI", "Combine", "MVVM", "Apollo GraphQL"],
-        repo: "private",
-      },
-      {
-        title: "Construction Diary",
-        kind: "Owned end to end",
-        summary: "Site diary with photo documentation, secure signatures, and PDF generation and sharing.",
-        role: "Design, implementation and release.",
-        highlights: [
-          "Photo documentation attached to diary entries.",
-          "Secure signatures and a shareable PDF report.",
-          "[Add one outcome, such as adoption or time saved, only if verified.]",
-        ],
-        stack: ["Swift", "SwiftUI"],
-        repo: "private",
-      },
-      {
-        title: "AI agent framework for construction workflows",
-        kind: "Team project, my contribution",
-        summary:
-          "An AI agent framework intended to help non-technical construction workers with leave requests, approvals and timesheet tasks.",
-        role: "[Describe exactly what you built, and what the team built.]",
-        highlights: [
-          "Goal: let workers complete routine admin tasks in plain language.",
-          "Related work: payroll exports designed to unify data from three systems.",
-        ],
-        stack: ["AI agents", "Workflow automation"],
-        repo: "private",
-      },
-      {
-        title: "Actionable notifications and Live Activities",
-        kind: "Hackathon, later developed for production",
-        summary: "Actionable push notifications, reminders, widgets and Live Activities to support more accurate clock-ins.",
-        role: "[Describe your part in the hackathon team.]",
-        highlights: [
-          "Idea later developed further for production use.",
-          "Reminders and actions surfaced where users already look.",
-        ],
-        stack: ["Swift", "SwiftUI", "WidgetKit", "ActivityKit"],
-        repo: "",
-      },
+      recognition: [
+        {
+          title: "Winner, 2025 CrewCenter Hackathon",
+          period: "2025",
+          note: "My cross-stack team won first place with in-app reminders, push notifications and Live Activities that show work time on the Lock Screen.",
+        },
+        {
+          title: "Best Crew Team Award, Q1 2025",
+          period: "March 2025",
+          note: "Led the SwiftUI redesign of the CrewCenter landing page and its navigation flows as part of the Facelift initiative.",
+        },
+        {
+          title: "Spot Award",
+          period: "April 2025",
+          note: "Peer-nominated for my iOS contributions to CrewCenter.",
+        },
+        {
+          title: "Best Crew Team Award, Q2 2025",
+          period: "June 2025",
+          note: "Cut app load time from about 15 seconds to 5 seconds by splitting GraphQL queries and running requests concurrently.",
+        },
       ],
     },
     {
@@ -155,9 +124,14 @@ export const site = {
       period: "Papers published 2024 and 2025",
       note: "Two peer-reviewed papers: malware classification and GPU-optimized deep learning for protein localization.",
       bullets: [
-        "First author of a malware detection paper that received the Best Paper award at ICCUBEA 2024, an IEEE international conference organized by PCCOE, Pune.",
-        "Co-author, with equal contribution, of a GPU optimization study for protein subcellular localization, published in SN Computer Science (Springer, 2025).",
-        "Evaluated models, selected features and improved training efficiency.",
+        {
+          text: "First author of a malware detection paper that received the Best Paper award at ICCUBEA 2024, an IEEE international conference organized by PCCOE, Pune.",
+          link: { label: "Read the paper (IEEE Xplore)", url: "https://ieeexplore.ieee.org/abstract/document/10775101" },
+        },
+        {
+          text: "Co-author, with equal contribution, of a GPU optimization study for protein subcellular localization, published in SN Computer Science (Springer, 2025).",
+          link: { label: "Read the paper (SN Computer Science)", url: "https://link.springer.com/article/10.1007/s42979-025-04090-2" },
+        },
       ],
     },
   ],
@@ -191,7 +165,7 @@ export const site = {
         "Works end to end with my own Claude, running locally on my Mac.",
       ],
       stack: ["Node.js", "Model Context Protocol", "Google Drive API", "OAuth", "ngrok"],
-      repo: "private",
+      repo: "https://github.com/nidhip02/drive-gatekeeper",
     },
     {
       title: "PeerLens: citation checking for academic drafts",
