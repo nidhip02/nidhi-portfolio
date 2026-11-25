@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { site } from "@/content/site";
 
-export const alt = "Portfolio: iOS and AI engineer";
+export const alt = "Portfolio: software and AI engineer";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -22,7 +22,7 @@ export default function OpengraphImage() {
         }}
       >
         <div style={{ fontSize: 96, fontWeight: 700 }}>{site.name}</div>
-        <div style={{ fontSize: 38, marginTop: 24, color: "#555b66" }}>iOS engineer, expanding into AI engineering</div>
+        <div style={{ fontSize: 38, marginTop: 24, color: "#555b66" }}>Software engineer, expanding into AI engineering</div>
       </div>
     ),
     size,

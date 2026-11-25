@@ -26,15 +26,15 @@ export const site = {
   initials: "NP",
   /** Optional portrait: put a square image in /public and set e.g. "/me.jpg". Empty shows initials. */
   photo: "/nidhi.jpg",
-  title: "Nidhi Patel | iOS and AI Engineer",
+  title: "Nidhi Patel | Software and AI Engineer",
   description:
-    "Nidhi Patel is an iOS engineer with strong product instincts, expanding into AI engineering and intelligent workflows. Cornell Tech MEng in Computer Science.",
+    "Nidhi Patel is a software engineer with strong product instincts and mobile development experience, expanding into AI engineering and intelligent workflows. Cornell Tech MEng in Computer Science.",
   headline: "Software engineer with strong product instincts, experience in mobile development, expanding into AI engineering and intelligent workflows.",
   intro:
     "I build and ship production iOS products. At Hilti I worked on CrewCenter, a construction workforce app with 100,000+ users. I am now studying Computer Science at Cornell Tech, focusing on AI agents and LLM-powered workflows.",
   now: [
     { label: "Studying", value: "MEng Computer Science, Cornell Tech" },
-    { label: "Previously", value: "Software Engineer, Hilti Technology Solutions India" },
+    { label: "Previously", value: "Software Development Engineer (iOS), Hilti Technology Solutions India" },
   ],
 
   links: {
@@ -82,16 +82,16 @@ export const site = {
 
   experience: [
     {
-      role: "Software Engineer",
+      role: "Software Development Engineer (iOS)",
       org: "Hilti Technology Solutions India",
       period: "July 2024 to 2026",
       note: "Joined as an intern and moved into a full-time role. Worked on CrewCenter, a construction workforce and time-tracking product.",
       bullets: [
         "Built and improved production iOS features in Swift and SwiftUI.",
-        "Redesigned the CrewCenter landing experience for a product with 100,000+ users.",
+        "Led the SwiftUI redesign of the CrewCenter landing page for 100,000+ users, and its migration from MVVM to The Composable Architecture (TCA).",
         "Worked on the Extra Time / Overtime feature, with real-time work-time calculations, for an app with 20,000+ daily active users.",
-        "Cut a reported GraphQL operation from about 15 seconds to 5 seconds using chunking and parallel requests.",
-        "Raised automated test coverage from 68% to 76% and reduced a reported SonarQube issue count from 112 to 50.",
+        "Cut app load time 67%, from about 15 seconds to 5 seconds, by splitting heavy GraphQL queries into chunks and running independent requests concurrently.",
+        "Raised automated test coverage from about 60% to about 80%, cut SonarQube issues from 112 to 50, and integrated Sentry for crash reporting.",
         "Contributed to an AI agent framework for leave requests, approvals and timesheets, and to payroll exports designed to unify data from three systems.",
         "Owned design, implementation and release of Construction Diary.",
       ],
